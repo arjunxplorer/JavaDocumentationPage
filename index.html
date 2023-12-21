@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Java Documentation Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+        <header>Java Documentation</header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#History_of_Java">History of Java</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#C++_vs_Java_vs_Python">C++ Vs Java Vs Python</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Java_Basic_Syntax">Java Basic Syntax</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Hello_World_Program">Hello World Program</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Data_Types">Data Types</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Identifiers">Identifiers</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Reference">Reference</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>"Developed by Sun Microsystems in 1995, Java is a highly popular, object-oriented programming 
+            language. This platform independent programming language is utilized for Android development, 
+            web development, artificial intelligence, cloud applications, and much more."</p>
+          <p>"In this tutorial, we will cover everything from the basics of Java syntax to advanced topics 
+            like object-oriented programming and exception handling. So, by the end of this tutorial, you 
+            will have a strong understanding of Java and be ready to start writing your own Java applications. 
+            So let’s get started on this comprehensive Java programming tutorial!"</p>
+          <ul>
+            <li>Java programs are compiled into bytecode, which can run on any Java Virtual Machine (JVM).</li>
+            <li>Core principles of encapsulation, inheritance, and polymorphism.</li>
+            <li>Built-in support for concurrent programming with the java.lang.Thread class.</li>
+            <li>Garbage Collection automatically manages memory, freeing developers from manual memory management concerns.</li>
+            <li>Extensive set of APIs for networking, I/O, data structures, utilities, and more.</li>
+          </ul>  
+          
+        </article>
+      </section>
+      <section class="main-section" id="History_of_Java">
+        <header>History of Java</header>
+        <article>
+            <p>"Java is an Object-Oriented programming language developed by James Gosling in the early 1990s.
+                The team initiated this project to develop a language for digital devices such as set-top boxes, 
+                television, etc. Originally C++ was considered to be used in the project but the idea was rejected 
+                for several reasons(For instance C++ required more memory). Gosling endeavoured to alter and expand 
+                C++ however before long surrendered that for making another stage called Green. James Gosling and his 
+                team called their project “Greentalk” and its file extension was .gt and later became to known as “OAK”. 
+                Why “Oak”? The name Oak was used by Gosling after an oak tree that remained outside his office. 
+                Also, Oak is an image of solidarity and picked as a national tree of numerous nations like the U.S.A., 
+                France, Germany, Romania, etc. But they had to later rename it as “JAVA” as it was already a trademark 
+                by Oak Technologies."</p>
+            <p>"“JAVA” Gosling and his team did a brainstorm session and after the session, they came up with several 
+                names such as JAVA, DNA, SILK, RUBY, etc. Java name was decided after much discussion since it was so 
+                unique. The name Java originates from a sort of espresso bean, Java. Gosling came up with this name 
+                while having a coffee near his office. Java was created on the principles like Robust, Portable, Platform 
+                Independent, High Performance, Multithread, etc. and was called one of the Ten Best Products of 1995 by 
+                the TIME MAGAZINE. Currently, Java is used in internet programming, mobile devices, games, e-business 
+                solutions, etc. The Java language has experienced a few changes since JDK 1.0 just as various augmentations
+                of classes and packages to the standard library. In Addition to the language changes, considerably more 
+                sensational changes have been made to the Java Class Library throughout the years, which has developed from 
+                a couple of hundred classes in JDK 1.0 to more than three thousand in J2SE 5."</p>
+        </article>
+      </section>
+      <section class="main-section" id="C++_vs_Java_vs_Python">
+        <header>C++ vs Java vs Python</header>
+      <article>
+        <p>
+            "C++ is a powerful, general-purpose programming language that is known for its efficiency and performance. 
+            It is often used for systems programming, game development, and other performance-critical applications. 
+            C++ supports both procedural and object-oriented programming paradigms, providing developers with a high 
+            degree of control over hardware resources. It allows manual memory management, which can lead to optimized 
+            code but also requires careful handling to avoid memory leaks. C++ is a compiled language, and its syntax is 
+            derived from the C programming language, making it a versatile language for low-level programming."
+        </p>
+        <p>
+            "Java is a versatile, object-oriented programming language that is designed to be platform-independent 
+            through its "write once, run anywhere" (WORA) philosophy. Java applications are compiled into bytecode,
+            which can be executed on any Java Virtual Machine (JVM). This makes Java suitable for developing 
+            cross-platform applications, including web-based applications, enterprise software, and mobile 
+            applications for Android. Java's object-oriented nature encourages modular and scalable code design, 
+            while its garbage collection feature simplifies memory management, reducing the risk of memory-related errors."
+        </p>
+        <p>
+            "Python is a high-level, interpreted programming language known for its simplicity and readability. 
+            It emphasizes code readability and developer productivity, making it a popular choice for beginners 
+            and experienced developers alike. Python supports multiple programming paradigms, including procedural, 
+            object-oriented, and functional programming. It has a large standard library and a vast ecosystem of 
+            third-party libraries, making it suitable for a wide range of applications, such as web development, 
+            data analysis, artificial intelligence, and automation. Python's dynamic typing and automatic memory 
+            management contribute to faster development cycles but may impact performance in certain scenarios."
+        </p>
+    </article>
+      </section>
+      <section class="main-section" id="Java_Basic_Syntax">
+        <header>Java Basic Syntax</header>
+        <article>
+            <p>
+                "Java is a high-level, object-oriented programming language that follows a concise and 
+                structured syntax. The basic structure of a Java program includes the declaration of a 
+                class, the main method as the entry point of the program, and various constructs such as
+                variables, data types, control flow statements, and methods. The syntax for declaring a 
+                class involves using the class keyword followed by the class name, and the main method is
+                declared with the public static void main<strong>(String[] args)</strong> signature. 
+                Statements within the main method are enclosed within curly braces <strong>{}</strong>. 
+                Variables are declared using a combination of the data type and the variable name, and Java
+                supports various primitive data types such as int, double, char, and boolean. Control flow 
+                statements like if, else, switch, while, do-while, and for are used to manage the flow of 
+                execution based on conditions or loops. Methods, defined using the <strong>returnType methodName(parameters)</strong>
+                syntax, encapsulate reusable blocks of code, contributing to modular and organized programming. 
+                Syntax conventions include ending statements with semicolons (;), using camelCase for variable and 
+                method names, and indentation for code readability. The object-oriented nature of Java involves 
+                creating objects from classes, utilizing concepts like inheritance, encapsulation, and polymorphism. 
+                Additionally, Java includes exception handling with try, catch, and finally blocks for graceful error 
+                management. Overall, Java's syntax emphasizes readability, simplicity, and a strict structure, making 
+                it suitable for a wide range of applications from desktop to web and mobile development."
+            </p>
+            <code>
+                "import java.util.*;
+                public class Main {
+                    public static void main(String[] args)
+                    {
+                        System.out.println("Hello World!");
+                    }
+                }
+                "
+            </code>
+            <code>
+                "int number = 10;
+
+                // if-else statement
+                if (number > 0) {
+                    System.out.println("Positive number");
+                } else if (number < 0) {
+                    System.out.println("Negative number");
+                } else {
+                    System.out.println("Zero");
+                }
+                "
+            </code>
+        </article>
+      </section>
+      <section class="main-section" id="Hello_World_Program">
+        <header>Hello World Program</header>
+        <article>
+            <code>
+                "public class HelloWorld {
+                    public static void main(String[] args) {
+                        System.out.println("Hello, World!");
+                    }
+                }
+                "
+            </code>
+        </article>
+      </section>
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <article>
+            <p>
+                "Java supports a variety of data types that can be broadly categorized into two main groups:
+                primitive data types and reference data types. Primitive data types include integral types 
+                (such as int, byte, short, long, and char), floating-point types (float and double), and a 
+                boolean type (boolean). These types represent basic values and are stored directly in memory. 
+                On the other hand, reference data types include classes, interfaces, arrays, and enumerations. 
+                They store references to objects rather than the actual data. The choice of data type depends on 
+                the nature of the data and the requirements of the program. Java enforces strong typing, meaning 
+                that variables must be declared with a specific type before they can be used, contributing to code 
+                safety and reliability."
+            </p>
+            <code>
+                "public class DataTypesExample {
+                    public static void main(String[] args) {
+                        // Integral types
+                        int integerValue = 42;
+                        byte byteValue = 127;
+                        short shortValue = 32767;
+                        long longValue = 123456789L; // Note the 'L' suffix for long literals
+                        char charValue = 'A';
+                
+                        // Floating-point types
+                        float floatValue = 3.14f; // Note the 'f' suffix for float literals
+                        double doubleValue = 2.71828;
+                
+                        // Boolean type
+                        boolean booleanValue = true;
+                
+                        // Output values
+                        System.out.println("int: " + integerValue);
+                        System.out.println("byte: " + byteValue);
+                        System.out.println("short: " + shortValue);
+                        System.out.println("long: " + longValue);
+                        System.out.println("char: " + charValue);
+                        System.out.println("float: " + floatValue);
+                        System.out.println("double: " + doubleValue);
+                        System.out.println("boolean: " + booleanValue);
+                    }
+                }
+                "
+            </code>
+        </article>
+      </section>
+      <section class="main-section" id="Identifiers">
+        <header>Identifiers</header>
+        <article>
+            <p>
+                "In programming languages, including Java, an identifier is a name assigned to a program entity,
+                such as a variable, method, class, or label. Identifiers are essential for uniquely identifying 
+                and referencing these entities within the code. They follow certain rules and conventions, such 
+                as starting with a letter, underscore (_), or dollar sign ($), followed by letters, digits, 
+                underscores, or dollar signs. Identifiers are case-sensitive, meaning that uppercase and lowercase 
+                letters are distinct. It's important to choose meaningful and descriptive identifiers to enhance 
+                code readability and maintainability."
+            </p>
+            <code>
+                "public class IdentifierExample {
+                    // Class-level identifier
+                    public static final int MAX_VALUE = 100; // Constants are often named using uppercase with underscores
+                
+                    // Method-level identifiers
+                    public static void main(String[] args) {
+                        // Variable identifiers
+                        int counter = 0;
+                        double piValue = 3.14159;
+                
+                        // Loop label identifier
+                        outerLoop: for (int i = 0; i < 5; i++) {
+                            // Conditional statement with identifier
+                            if (i % 2 == 0) {
+                                // Output using method identifier
+                                printMessage("Even number: " + i);
+                            } else {
+                                // Output using method identifier
+                                printMessage("Odd number: " + i);
+                            }
+                        }
+                    }
+                
+                    // Method identifier
+                    private static void printMessage(String message) {
+                        System.out.println(message);
+                    }
+                }
+                "
+            </code>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+            <ul>
+                <li>All the documentation in this page is taken from
+                    <a href="https://www.geeksforgeeks.org/introduction-to-java/" target="_blank">GFG</a>
+                </li>
+            </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
